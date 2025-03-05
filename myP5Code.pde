@@ -1,12 +1,17 @@
+
 //setup Function - will automatically run Once
 setup = function(){
     size(400, 400); 
     background(255,255,255,150);
+    noStroke ();
 }
 
 //draw Function - will run repeatedly
-draw = function() {
-    ellipse(mouseX, mouseY, 20, 20);
+draw = function(){
+
+if(mousePressed){ 
+ellipse(mouseX, mouseY, 20, 20)
+}; 
 
   //***in the video they use if(mouseIsPressed)
   //***in glitch we use if(mousePressed)
@@ -22,6 +27,8 @@ var funWithKeys = function(){
     if(key == 'g'){fill(0,randomIntensity,0);}
     if(key == 'w'){fill(255,255,255);}
     if(key == 'c'){background(255,255,255,150);}
+    if(key == 'v'){fill(150, 182, 197);}
+    if(key == 'i'){fill(106, 30, 85);}
   }
 };
 
